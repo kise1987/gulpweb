@@ -1,0 +1,33 @@
+html
+	head
+		title 自动构建工具
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/css/index.css')
+		link(rel='shortcut icon', type='image/x-icon', href='favicon.ico')
+		script(src='/js/lib/jquery.2.2.3.min.js')
+		script(src='/js/lib/socket.io.js')
+		script(src='/js/index.js')
+		script(src='/bootstrap/js/bootstrap.min.js')
+	body
+		div.row(style="padding-top:20px;margin:0")
+			div.col-md-4
+				form.form-horizontal
+					div.form-group
+						label.col-sm-3.control-label(for="svnUrl") svnUrl
+						div.col-sm-9
+							input.form-control#svnUrl(type='url',placeholder='http://www.xxx.com/svn',value='http://10.100.141.17/svn/baoxiao/branches/dev/INCREMENT-1135/cloudService')
+					//
+						div.form-group
+							label.col-sm-3.control-label(for="svnUserName") username
+							div.col-sm-9
+								input.form-control#svnUserName(type='email',placeholder='example@qq.com')
+						div.form-group
+							label.col-sm-3.control-label(for="svnPassword") password
+							div.col-sm-9
+								input.form-control#svnPassword(type='password',placeholder='password')
+					div.form-group
+						div.col-sm-3
+						div.col-sm-9
+							button#startgulp.btn.btn-sm.btn-primary 开始构建»
+			div.col-md-8
+				div#msg.msgBox

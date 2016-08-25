@@ -1,0 +1,23 @@
+{
+  "name": "gulp-test",
+  "description": "JavaScript's functional programming helper library.",
+  "homepage": "",
+  "keywords": [
+    "test"
+  ],
+  "license" : "BSD-3-Clause",
+  "author": "kise",
+  "contributors": [],
+  "dependencies": [],
+  "repository": {},
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.4",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-sftp": "*",
+    "gulp-uglify": "^1.5.3",
+    "imagemin-pngquant": "^4.2.2"
+  }
+}
