@@ -8,7 +8,6 @@ var gulp = require('gulp'),
 
 var path = (process.argv[3] || '') + '/src/main/webapp/';
 console.log('workPath:',path);
-	// --workPath /Users/kay/gulpweb/svnworkspace/cloudService1464598959502
 	// js min
 gulp.task("jsmin", function() {
 		return gulp.src(path + 'develop/js/*.js')
